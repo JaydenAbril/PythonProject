@@ -133,8 +133,9 @@ def questionf():
       right += 1
     else:
       print("Make sure you're entering an answer!")
+      
     #-----------------------
-    #Defines if you get a question right, you get this amount on money
+    #Defines if you get a question right, you get this amount on money depending on how many questions you already got correct 
     #-----------------------
     
     if right == 1: 
