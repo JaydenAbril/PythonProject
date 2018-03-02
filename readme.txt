@@ -9,6 +9,7 @@ global questions
 #-----------------------
 #DEFINING THE QUESTIONS AND ANSWERS
 #-----------------------
+
  
 questions = [
 "Which country was the largest?",
@@ -107,9 +108,12 @@ def intro():
   print("Welcome to the Quiz, ", raw, "!", sep="")
   time.sleep(1)
   questionf()
- 
+  
+
+
 def questionf():
   the = True
+  right = 0
   while the == True:
     noq = 0
     for question in questions:
@@ -125,16 +129,50 @@ def questionf():
     answer = raw_input("What is the answer?: ")
     abcd = ["a", "b", "c", "d"]
     if answer.lower() in abcd:
-      print("You got it right! we've given you 25,000 dollars!")
-      print(" ")
+      print("You got it right!")
+      right += 1
     else:
       print("Make sure you're entering an answer!")
+    #-----------------------
+    #Defines if you get a question right, you get this amount on money
+    #-----------------------
     
+    if right == 1: 
+      print("You recieved 500 Dollars")
+      print(" ")
+    if right == 2: 
+      print("You recieved 1,000 Dollars")
+      print(" ")
+    if right == 3: 
+      print("You recieved 1,500 Dollars")
+      print(" ")
+    if right == 4: 
+      print("You recieved 2,000 Dollars")
+      print(" ")
+    if right == 5: 
+      print("You recieved 2,500 Dollars")
+      print(" ")
+    if right == 6: 
+      print("You recieved 3,000 Dollars")
+      print(" ")
+    if right == 7: 
+      print("You recieved 3,500 Dollars")
+      print(" ")
+    if right == 8: 
+      print("You recieved 4,000 Dollars")
+      print(" ")
+    if right == 9: 
+      print("You recieved 4,500 Dollars")
+      print(" ")
+    if right == 10: 
+      print("You recieved 5,000 Dollars")
+      print(" ")
       
- 
+    #-----------------------
+    #Defines if you get a question right, you get this amount on money
+    #-----------------------
+
 def goodtogo():
   random = 0
 
-  
-     
 intro()
