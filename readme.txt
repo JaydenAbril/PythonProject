@@ -7,7 +7,7 @@ import time
 global questions
 
 #-----------------------
-#DEFINING THE QUESTIONS AND ANSWERS
+#Defines questions and answers
 #-----------------------
 
  
@@ -97,7 +97,7 @@ C. Wireless Fidelity
 D. Wireless Fission
 """]
 #-----------------------
-#DEFINING THE QUESTIONS AND ANSWERS
+#Defines questions and answers
 #-----------------------
  
 def intro():
