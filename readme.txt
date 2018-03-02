@@ -40,7 +40,7 @@ A. Russia
 B. India
 C. United States
 D. China
-"""
+""",
 """
 A.  Giraffes
 B.  Elephants
@@ -100,7 +100,7 @@ D. Wireless Fission
 #-----------------------
  
 def intro():
-  print("Welcome to Jayden & Jimmies Quiz!")
+  print("Welcome to Jayden & Jimmy's Quiz!")
   print(" ")
   raw = raw_input("Please enter your name: ")
   print(" ")
@@ -115,7 +115,6 @@ def questionf():
     for question in questions:
       noq += 1
     q = random.randint(0,noq)
-    print(q)
     questionno = questions[q]
     prints = printables[q]
     answe = answers[q]
@@ -125,15 +124,17 @@ def questionf():
     print(" ")
     answer = raw_input("What is the answer?: ")
     abcd = ["a", "b", "c", "d"]
-    if answer in abcd:
+    if answer.lower() in abcd:
       print("You got it right! we've given you 25,000 dollars!")
+      print(" ")
     else:
       print("Make sure you're entering an answer!")
-      answer()
+    
+      
  
 def goodtogo():
   random = 0
 
-def answer():
+  
      
 intro()
