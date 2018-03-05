@@ -14,6 +14,8 @@ def intro():
   time.sleep(.5)
   print("Welcome to the Quiz, ", raw, "!", sep="")
   print("You'll recieve 10 questions, including 4 options to choose from, good luck!")
+  print(" ")
+  print("Make sure you capitalize the letters!!")
   time.sleep(1)
   question1()
   
@@ -21,6 +23,8 @@ def question1():
   the = True
   right = 0
   while the == True:
+    print(" ")
+    time.sleep(1.5)
     print(" ")
     print("Which Country has the largest population?")
     print(" ")
@@ -30,7 +34,6 @@ def question1():
     if answer == "A":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 500 dollars!")
       question2()
     else:
@@ -42,6 +45,7 @@ def question2():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("What is the only mammal that can't jump?")
     print(" ")
     print("A. Giraffes, B. Kangaroos, C. Lions, D. Elephants ")
@@ -50,7 +54,6 @@ def question2():
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 1,000 dollars!")
       question3()
     else:
@@ -62,6 +65,7 @@ def question3():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("How many states are in the United States?")
     print(" ")
     print("A. 49, B. 50, C. 51, D. 52 ")
@@ -70,7 +74,6 @@ def question3():
     if answer == "B":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 1,500 dollars!")
       question4()
     else:
@@ -82,6 +85,7 @@ def question4():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("How many bones are in the human body?")
     print(" ")
     print("A. 207, B. 205, C. 206, D. 208 ")
@@ -90,7 +94,6 @@ def question4():
     if answer == "C":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 2,000 dollars!")
       question5()
     else:
@@ -102,6 +105,7 @@ def question5():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("How many genders are there in this world?")
     print(" ")
     print("A. 1, B. 2, C. 55, D. 60 ")
@@ -110,7 +114,6 @@ def question5():
     if answer == "B":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 2,500 dollars!")
       question6()
     else:
@@ -122,6 +125,7 @@ def question6():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("What is the world's highest mountain?")
     print(" ")
     print("A. Makalu, B. K2, C. KilimanJaro, D. Mount Everest ")
@@ -130,7 +134,6 @@ def question6():
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 3,000 dollars!")
       question7()
     else:
@@ -142,6 +145,7 @@ def question7():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("Which of these cities is not in Europe?")
     print(" ")
     print("A. Prague, B. Barcelona, C. Reyjkjavik, D. Moscow ")
@@ -150,7 +154,6 @@ def question7():
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 3,500 dollars!")
       question8()
     else:
@@ -162,6 +165,7 @@ def question8():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("How many countries are there in the world?")
     print(" ")
     print("A. 205, B. 175, C. 143, D. 195 ")
@@ -170,7 +174,6 @@ def question8():
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 4,000 dollars!")
       question9()
     else:
@@ -182,6 +185,7 @@ def question9():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("Which of the following countries do not border France?")
     print(" ")
     print("A. Germany, B. Italy, C. Netherlands, D. Spain ")
@@ -190,7 +194,6 @@ def question9():
     if answer == "C":
       time.sleep(.5)
       print("You got it right!")
-      print(" ")
       print("You recieved 4,500 dollars!")
       question10()
     else:
@@ -202,6 +205,7 @@ def question10():
   right = 0
   while the == True:
     print(" ")
+    time.sleep(1.5)
     print("What does Wi-Fi stand for?")
     print(" ")
     print("A. Wireless Facility, B. Doesn't stand for anything, C. Wireless Fidelity, D. Wireless Fission ")
@@ -211,8 +215,8 @@ def question10():
       time.sleep(.5)
       print("You got it right!")
       print(" ")
-      print("You recieved 5,000 dollars!")
-      break
+      ending()
+    
     else:
       print("Incorrect, you lose.")
       retry()
@@ -222,8 +226,27 @@ def retry():
   print("Would you like to retry?")
   answer = raw_input("Type yes or no: ")
   if answer == "yes":
+    print(" ")
+    print(" ")
+    print(" ")
+    print(" ")
     question1()
-  if answer == "no":
+  elif answer == "no":
     question1()
     
+def ending():
+  print("Congragulations, you beat the quiz! You've been awarded 5,000 dollars!")
+  print(" ")
+  print("Do you want to do the quiz again?")
+  answer = raw_input("Type yes or no: ")
+  if answer == "yes":
+    question1()
+  elif answer == "no":
+    time.sleep(2)
+    print("the end")
+  else:
+	  time.sleep(.5)
+	  print
+	  ending()
+
 intro()
