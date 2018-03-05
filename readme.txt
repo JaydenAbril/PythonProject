@@ -4,176 +4,226 @@ from __future__ import print_function
 import math
 import random
 import time
-global questions
 
-#-----------------------
-#Defines questions and answers
-#-----------------------
 
- 
-questions = [
-"Which country was the largest?",
-"What is the only mammal that cant jump?",
-"How many states are in the US?",
-"How many bones are in the human body?",
-"How many genders are in this world?",
-"What is the worlds highest mountain?",
-"Which of these cities is not in Europe?",
-"How many countries are in the world?",
-"Which of the following countries do not border France?",
-"What does Wi-Fi stand for?",]
-global answers
-answers = [
-"A",
-"B",
-"C",
-"D",
-"A",
-"B",
-"C",
-"D",
-"A",
-"B",
-]
-global printables
-printables = ["""
-A. Russia
-B. India
-C. United States
-D. China
-""",
-"""
-A.  Giraffes
-B.  Elephants
-C.  Kangaroos
-D.  Lions
-""",
-"""
-A. 49
-B. 51
-C. 50
-D. 52
-""",
-"""
-A. 207
-B. 205
-C. 208
-D. 206
-""",
-"""
-A. 2
-B. 1
-C. 55
-D. 60
-""",
-"""
-A. Makalu
-B. Mount Everest
-C. KilimanJaro
-D. K2
-""",
-"""
-A. Prague
-B. Barelona
-C. Moscow
-D. Reykjavik
-""",
-"""
-A. 205
-B. 157
-C. 143
-D. 195
-""",
-"""
-A. Netherlands
-B. Germany
-C. Spain
-D. Italy
-""",
-"""
-A. Wireless Facility
-B. Doesn't Stand for Anything
-C. Wireless Fidelity
-D. Wireless Fission
-"""]
-#-----------------------
-#Defines questions and answers
-#-----------------------
- 
 def intro():
   print("Welcome to Jayden & Jimmy's Quiz!")
   print(" ")
   raw = raw_input("Please enter your name: ")
   print(" ")
+  time.sleep(.5)
   print("Welcome to the Quiz, ", raw, "!", sep="")
+  print("You'll recieve 10 questions, including 4 options to choose from, good luck!")
   time.sleep(1)
-  questionf()
+  question1()
   
-
-
-def questionf():
+def question1():
   the = True
   right = 0
   while the == True:
-    noq = 0
-    for question in questions:
-      noq += 1
-    q = random.randint(0,noq)
-    questionno = questions[q]
-    prints = printables[q]
-    answe = answers[q]
-    print("Your question is: ", questionno)
     print(" ")
-    print(prints)
+    print("Which Country has the largest population?")
+    print(" ")
+    print("A. Russia, B. India, C. United States, D. China")
     print(" ")
     answer = raw_input("What is the answer?: ")
-    abcd = ["a", "b", "c", "d"]
-    if answer.lower() in abcd:
+    if answer == "A":
+      time.sleep(.5)
       print("You got it right!")
-      right += 1
+      print(" ")
+      print("You recieved 500 dollars!")
+      question2()
     else:
-      print("Make sure you're entering an answer!")
-      
-    #-----------------------
-    #Defines if you get a question right, you get this amount on money depending on how many questions you already got correct 
-    #-----------------------
+      print("Incorrect, you lose.")
+      retry()
+  
+def question2():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("What is the only mammal that can't jump?")
+    print(" ")
+    print("A. Giraffes, B. Kangaroos, C. Lions, D. Elephants ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "D":
+      time.sleep(.5)
+      print("You got it right!")
+      print(" ")
+      print("You recieved 1,000 dollars!")
+      question3()
+    else:
+      print("Incorrect, you lose.")
+      retry()
     
-    if right == 1: 
-      print("You recieved 500 Dollars")
+def question3():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("How many states are in the United States?")
+    print(" ")
+    print("A. 49, B. 50, C. 51, D. 52 ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "B":
+      time.sleep(.5)
+      print("You got it right!")
       print(" ")
-    if right == 2: 
-      print("You recieved 1,000 Dollars")
+      print("You recieved 1,500 dollars!")
+      question4()
+    else:
+      print("Incorrect, you lose.")
+      retry()
+    
+def question4():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("How many bones are in the human body?")
+    print(" ")
+    print("A. 207, B. 205, C. 206, D. 208 ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "C":
+      time.sleep(.5)
+      print("You got it right!")
       print(" ")
-    if right == 3: 
-      print("You recieved 1,500 Dollars")
+      print("You recieved 2,000 dollars!")
+      question5()
+    else:
+      print("Incorrect, you lose.")
+      retry()
+    
+def question5():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("How many genders are there in this world?")
+    print(" ")
+    print("A. 1, B. 2, C. 55, D. 60 ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "B":
+      time.sleep(.5)
+      print("You got it right!")
       print(" ")
-    if right == 4: 
-      print("You recieved 2,000 Dollars")
-      print(" ")
-    if right == 5: 
-      print("You recieved 2,500 Dollars")
-      print(" ")
-    if right == 6: 
-      print("You recieved 3,000 Dollars")
-      print(" ")
-    if right == 7: 
-      print("You recieved 3,500 Dollars")
-      print(" ")
-    if right == 8: 
-      print("You recieved 4,000 Dollars")
-      print(" ")
-    if right == 9: 
-      print("You recieved 4,500 Dollars")
-      print(" ")
-    if right == 10: 
-      print("You recieved 5,000 Dollars")
-      print(" ")
-      
-    #-----------------------
-    #Defines if you get a question right, you get this amount on money
-    #-----------------------
+      print("You recieved 2,500 dollars!")
+      question6()
+    else:
+      print("Incorrect, you lose.")
+      retry()
 
-def goodtogo():
-  random = 0
+def question6():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("What is the world's highest mountain?")
+    print(" ")
+    print("A. Makalu, B. K2, C. KilimanJaro, D. Mount Everest ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "D":
+      time.sleep(.5)
+      print("You got it right!")
+      print(" ")
+      print("You recieved 3,000 dollars!")
+      question7()
+    else:
+      print("Incorrect, you lose.")
+      retry()
 
+def question7():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("Which of these cities is not in Europe?")
+    print(" ")
+    print("A. Prague, B. Barcelona, C. Reyjkjavik, D. Moscow ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "D":
+      time.sleep(.5)
+      print("You got it right!")
+      print(" ")
+      print("You recieved 3,500 dollars!")
+      question8()
+    else:
+      print("Incorrect, you lose.")
+      retry()    
+
+def question8():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("How many countries are there in the world?")
+    print(" ")
+    print("A. 205, B. 175, C. 143, D. 195 ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "D":
+      time.sleep(.5)
+      print("You got it right!")
+      print(" ")
+      print("You recieved 4,000 dollars!")
+      question9()
+    else:
+      print("Incorrect, you lose.")
+      retry()   
+    
+def question9():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("Which of the following countries do not border France?")
+    print(" ")
+    print("A. Germany, B. Italy, C. Netherlands, D. Spain ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "C":
+      time.sleep(.5)
+      print("You got it right!")
+      print(" ")
+      print("You recieved 4,500 dollars!")
+      question10()
+    else:
+      print("Incorrect, you lose.")
+      retry()
+    
+def question10():
+  the = True
+  right = 0
+  while the == True:
+    print(" ")
+    print("What does Wi-Fi stand for?")
+    print(" ")
+    print("A. Wireless Facility, B. Doesn't stand for anything, C. Wireless Fidelity, D. Wireless Fission ")
+    print(" ")
+    answer = raw_input("What is the answer?: ")
+    if answer == "B":
+      time.sleep(.5)
+      print("You got it right!")
+      print(" ")
+      print("You recieved 5,000 dollars!")
+      break
+    else:
+      print("Incorrect, you lose.")
+      retry()
+    
+def retry(): 
+  print(" ")
+  print("Would you like to retry?")
+  answer = raw_input("Type yes or no: ")
+  if answer == "yes":
+    question1()
+  if answer == "no":
+    question1()
+    
 intro()
