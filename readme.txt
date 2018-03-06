@@ -26,7 +26,7 @@ def question1():
     print(" ")
     time.sleep(1.5)
     print(" ")
-    print("Which Country has the largest population?")
+    print("1. Which Country has the largest population?")
     print(" ")
     print("A. Russia, B. India, C. United States, D. China")
     print(" ")
@@ -46,7 +46,7 @@ def question2():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("What is the only mammal that can't jump?")
+    print("2. What is the only mammal that can't jump?")
     print(" ")
     print("A. Giraffes, B. Kangaroos, C. Lions, D. Elephants ")
     print(" ")
@@ -66,7 +66,7 @@ def question3():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("How many states are in the United States?")
+    print("3. How many states are in the United States?")
     print(" ")
     print("A. 49, B. 50, C. 51, D. 52 ")
     print(" ")
@@ -86,7 +86,7 @@ def question4():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("How many bones are in the human body?")
+    print("4. How many bones are in the human body?")
     print(" ")
     print("A. 207, B. 205, C. 206, D. 208 ")
     print(" ")
@@ -106,7 +106,7 @@ def question5():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("How many genders are there in this world?")
+    print("5. How many genders are there in this world?")
     print(" ")
     print("A. 1, B. 2, C. 55, D. 60 ")
     print(" ")
@@ -126,7 +126,7 @@ def question6():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("What is the world's highest mountain?")
+    print("6. What is the world's highest mountain?")
     print(" ")
     print("A. Makalu, B. K2, C. KilimanJaro, D. Mount Everest ")
     print(" ")
@@ -146,7 +146,7 @@ def question7():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("Which of these cities is not in Europe?")
+    print("7. Which of these cities is not in Europe?")
     print(" ")
     print("A. Prague, B. Barcelona, C. Reyjkjavik, D. Moscow ")
     print(" ")
@@ -166,7 +166,7 @@ def question8():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("How many countries are there in the world?")
+    print("8. How many countries are there in the world?")
     print(" ")
     print("A. 205, B. 175, C. 143, D. 195 ")
     print(" ")
@@ -186,7 +186,7 @@ def question9():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("Which of the following countries do not border France?")
+    print("9. Which of the following countries do not border France?")
     print(" ")
     print("A. Germany, B. Italy, C. Netherlands, D. Spain ")
     print(" ")
@@ -206,7 +206,7 @@ def question10():
   while the == True:
     print(" ")
     time.sleep(1.5)
-    print("What does Wi-Fi stand for?")
+    print("10. What does Wi-Fi stand for?")
     print(" ")
     print("A. Wireless Facility, B. Doesn't stand for anything, C. Wireless Fidelity, D. Wireless Fission ")
     print(" ")
