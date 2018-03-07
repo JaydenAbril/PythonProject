@@ -5,7 +5,6 @@ import math
 import random
 import time
 
-
 def intro():
   print("Welcome to Jayden & Jimmy's Quiz!")
   print(" ")
@@ -15,13 +14,14 @@ def intro():
   print("Welcome to the Quiz, ", raw, "!", sep="")
   print("You'll recieve 10 questions, including 4 options to choose from, good luck!")
   print(" ")
-  print("Make sure you capitalize the letters!!")
+  print("Make sure you capitalize your letter!!!")
   time.sleep(1)
   question1()
   
 def question1():
+  money = 0
+  cash = 0
   the = True
-  right = 0
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -34,35 +34,49 @@ def question1():
     if answer == "A":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 500 dollars!")
+      money += 1
+    if money == 1:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question2()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
   
 def question2():
+  money = 1
+  cash = 500
   the = True
-  right = 0
   while the == True:
     print(" ")
     time.sleep(1.5)
+    print(" ")
     print("2. What is the only mammal that can't jump?")
     print(" ")
-    print("A. Giraffes, B. Kangaroos, C. Lions, D. Elephants ")
+    print("A. Giraffes, B. Kangaroos, C. Lions, D. Elephants")
     print(" ")
     answer = raw_input("What is the answer?: ")
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 1,000 dollars!")
+      money += 1
+    if money == 2:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question3()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
+    
     
 def question3():
   the = True
-  right = 0
+  money = 2
+  cash = 1000
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -74,15 +88,21 @@ def question3():
     if answer == "B":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 1,500 dollars!")
+      money += 1
+    if money == 3:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question4()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
     
 def question4():
   the = True
-  right = 0
+  money = 3
+  cash = 1500
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -94,15 +114,21 @@ def question4():
     if answer == "C":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 2,000 dollars!")
+      money += 1
+    if money == 4:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question5()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
     
 def question5():
   the = True
-  right = 0
+  money = 4
+  cash = 2000
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -114,15 +140,21 @@ def question5():
     if answer == "B":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 2,500 dollars!")
+      money += 1
+    if money == 5:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question6()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
 
 def question6():
   the = True
-  right = 0
+  money = 5
+  cash = 2500
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -134,15 +166,21 @@ def question6():
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 3,000 dollars!")
+      money += 1
+    if money == 6:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question7()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
 
 def question7():
   the = True
-  right = 0
+  money = 6
+  cash = 3000
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -154,15 +192,21 @@ def question7():
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 3,500 dollars!")
+      money += 1
+    if money == 7:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question8()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()    
 
 def question8():
   the = True
-  right = 0
+  money = 7
+  cash = 3500
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -174,15 +218,21 @@ def question8():
     if answer == "D":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 4,000 dollars!")
+      money += 1
+    if money == 8:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question9()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()   
     
 def question9():
   the = True
-  right = 0
+  money = 8
+  cash = 4000
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -194,15 +244,21 @@ def question9():
     if answer == "C":
       time.sleep(.5)
       print("You got it right!")
-      print("You recieved 4,500 dollars!")
+      money += 1
+    if money == 9:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       question10()
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
     
 def question10():
   the = True
-  right = 0
+  money = 9
+  cash = 4500
   while the == True:
     print(" ")
     time.sleep(1.5)
@@ -215,10 +271,15 @@ def question10():
       time.sleep(.5)
       print("You got it right!")
       print(" ")
+      money += 1
+    if money == 10:
+      cash += 500
+      print('You recieved',cash,'dollars!')
       ending()
-    
     else:
       print("Incorrect, you lose.")
+      print(" ")
+      print('Your total was: ',cash,'')
       retry()
     
 def retry(): 
