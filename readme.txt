@@ -294,6 +294,8 @@ def retry():
     question1()
   elif answer == "no":
     question1()
+  else :
+    question1()
     
 def ending():
   print("Congragulations, you beat the quiz! You've been awarded 5,000 dollars!")
@@ -305,6 +307,12 @@ def ending():
   elif answer == "no":
     time.sleep(2)
     print("the end")
+    time.sleep(3)
+    print("just kidding.. taking you back to quiz")
+    print(" ")
+    print(" ")
+    print(" ")
+    question1()
   else:
 	  time.sleep(.5)
 	  print
